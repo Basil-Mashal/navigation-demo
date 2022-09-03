@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
             onPressed: () {
               setState(() {
                 Navigator.push(context, MaterialPageRoute(builder: (context) {
-                  return ScreenOne();
+                  return ScreenTwo();
                 }));
               });
             },
@@ -46,7 +46,13 @@ class _HomeState extends State<Home> {
         ),
         Container(
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return ScreenOne();
+                }));
+              });
+            },
             child: Text(
               "go to page #1",
               style: TextStyle(fontSize: 30),
